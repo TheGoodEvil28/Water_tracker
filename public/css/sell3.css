@@ -1,0 +1,109 @@
+/* General reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDFDFD;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+
+/* Navbar styling */
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Thank You Section Styling */
+
+.thank-you-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    /* Reduced margin to move content upwards */
+    max-width: 800px;
+}
+
+
+/* Adjust Thank You text positioning */
+
+.thank-you-section h1 {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    /* Adjusted margin for closer spacing */
+}
+
+.thank-you-section p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* Image styling */
+
+.thank-you-section img {
+    max-width: 400px;
+    /* Increased size of the image */
+    margin-bottom: 20px;
+    height: auto;
+}
+
+
+/* Button styling */
+
+.btn {
+    background-color: #E74C3C;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .thank-you-section {
+        padding: 20px;
+    }
+    .thank-you-section h1 {
+        font-size: 32px;
+    }
+    .thank-you-section p {
+        font-size: 16px;
+    }
+    .thank-you-section img {
+        max-width: 250px;
+        /* Smaller image for mobile */
+    }
+    .btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}

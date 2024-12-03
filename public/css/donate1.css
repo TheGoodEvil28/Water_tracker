@@ -1,0 +1,175 @@
+/* General */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F3F6FB 50%, #F6F1EB 100%);
+}
+
+.donation-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.donation-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.donation-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.donation-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+
+/* Fonts */
+
+.reward-title {
+    font-family: 'Voga', serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #000;
+}
+
+.subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.donation-details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.donate-btn {
+    background-color: #131313;
+    width: 516px;
+    max-width: 100%;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #333538;
+}
+
+
+/* Info Section */
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.what-you-need-to-know,
+.product-standards {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.what-you-need-to-know h3,
+.product-standards h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.what-you-need-to-know ul,
+.product-standards ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.what-you-need-to-know li,
+.product-standards li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+
+/* Product Standards Box Styling */
+
+.product-standards li::before {
+    content: "•";
+    color: #3498db;
+    margin-right: 15px;
+}
+
+
+/* Responsive Design */
+
+
+/* Tablet and smaller screens */
+
+@media (max-width: 768px) {
+    .donation-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .donation-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .info-sections {
+        flex-direction: column;
+    }
+    .donate-btn {
+        width: 100%;
+    }
+}
+
+
+/* Mobile Phones */
+
+@media (max-width: 480px) {
+    .reward-title {
+        font-size: 28px;
+    }
+    .subheading {
+        font-size: 22px;
+    }
+    .donation-details {
+        font-size: 16px;
+    }
+    .donation-image img {
+        max-width: 100%;
+    }
+    .donate-btn {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+}

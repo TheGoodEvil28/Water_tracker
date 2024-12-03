@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDFDFD;
+    color: #333;
+}
+
+
+/* Donation Details Container */
+
+.donation-details-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+
+/* Section Titles */
+
+.section-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* Left Section: Donation Item Details */
+
+.left-section {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+/* Sender Identity */
+
+.sender-identity {
+    margin-bottom: 20px;
+}
+
+.sender-identity label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.sender-identity textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #FDFDFD;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 100px;
+}
+
+
+/* Labels and Inputs */
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #FDFDFD;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+
+/* Item Photos */
+
+.item-photos img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+/* Right Section: Pickup Date */
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+/* Submit Button */
+
+.submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333538;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .donation-details-container {
+        flex-direction: column;
+    }
+    .left-section,
+    .right-section {
+        padding: 15px;
+    }
+    .submit-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,192 @@
+/* Adjust the layout of the sections to be 50/50 width */
+
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    /* Ensures that on smaller screens it wraps */
+}
+
+
+/* Styling the payment and order summary boxes */
+
+.payment-details,
+.order-summary {
+    width: calc(50% - 10px);
+    /* Adjust to account for margins */
+    margin: 0;
+}
+
+.payment-details {
+    background-color: white;
+    padding: 20px;
+    /* Remove box-shadow */
+    box-shadow: none;
+}
+
+.order-summary {
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding: 20px;
+    /* Remove box-shadow */
+    box-shadow: none;
+}
+
+
+/* Bank transfer, e-wallet, and QR payment boxes */
+
+.payment-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    /* Remove box-shadow */
+    box-shadow: none;
+}
+
+
+/* Bank logos layout */
+
+.bank-logos {
+    display: flex;
+    justify-content: space-between;
+    /* Ensure logos are spaced evenly */
+    width: 100%;
+}
+
+.payment-logo {
+    width: 100px;
+    height: auto;
+}
+
+
+/* E-Wallet and QR Payment layout */
+
+.e-wallet-box,
+.qr-payment-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.e-wallet,
+.qr-payment {
+    width: auto;
+}
+
+.e-wallet {
+    width: 38px;
+    height: 39px;
+}
+
+.qr-payment {
+    width: 54px;
+    height: 20px;
+}
+
+
+/* Responsive styling */
+
+@media (max-width: 768px) {
+    .payment-section {
+        flex-direction: column;
+    }
+    .payment-details,
+    .order-summary {
+        width: 100%;
+        /* Full width on mobile */
+        margin-bottom: 20px;
+    }
+    .payment-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .payment-logo {
+        width: 80px;
+    }
+    .e-wallet,
+    .qr-payment {
+        width: 80px;
+    }
+}
+
+
+/* Order Summary Section */
+
+.order-summary {
+    background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.order-summary-card {
+    background-color: #F6F6F6;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* Adjust padding and alignment for the summary items */
+
+.summary-details p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.order-summary-card img.order-product-img {
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+}
+
+.order-summary .total-section {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* Adjusting spacing */
+
+.order-summary h4 {
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    font-size: 16px;
+}
+
+.order-summary .summary-details {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Remove default padding from the 'p' tags to handle the layout better */
+
+.order-summary p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Ensuring that the summary card has proper margin and looks clean */
+
+.order-summary-card {
+    box-shadow: none;
+    /* To keep consistency if needed */
+    margin: 0;
+    padding: 15px 20px;
+    /* Adjusted for a more balanced layout */
+}
